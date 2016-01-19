@@ -76,14 +76,14 @@
 
 \begin{abstract}
 \addcontentsline{toc}{chapter}{Resum}
-alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf alksfj klañjds klañjsdfkljwqeriojgd odjfs alskdf 
+En aquest informe es presenta l'experiència d'identificació i control de velocitat i posició d'un motor DC, connectat a un Arduino. Per aconseguir aquest objectiu es passa per la linealització del sistema, amb la posterior extracció del model que aproxima el motor. A més, també es veu com es pot extreure tant la posició real i la velocitat a partir de la lectura en brut dels \textit{encoders}. Per una banda, el control de velocitat es du a terme amb l'ús d'un observador amb refús de pertorbacions. Mentre, per l'altra banda, s'ha intentat dur a terme el control de posició amb un observador, però degut a varis problemes no s'ha pogut aconseguir.
 \end{abstract}
 
 \tableofcontents
 
 \listoffigures
 
-%\listoftables
+\listoftables
 
 \chapter{Introducció}
 
@@ -115,6 +115,9 @@ Per altra banda, també es possible el càlcul de la velocitat real ja que tamb�
 v [RPM] = \frac{2\cdot 10^6}{\triangle t [ms]}
 \end{equation}
 
+Per últim, mencionar que els codis que s'han utilitzat juntament amb el mateix informe, amb el seu \texttt{.tex}, es poden trobar al Github següent:
+
+\url{https://github.com/lluissalord/Control-DC-Motor}
 %Referenciar GitHub i fer-lo
 
 \chapter{Identificació del motor}
